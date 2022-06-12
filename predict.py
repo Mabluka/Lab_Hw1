@@ -29,4 +29,5 @@ if __name__ == "__main__":
 
     predict_df = test_dl.X[["ID", "SepsisLabel"]]
 
-    predict_df.to_csv("prediction.csv")
+    predict_df.to_csv("prediction.csv", index=False, header=False)
+
